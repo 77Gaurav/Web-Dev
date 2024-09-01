@@ -1,0 +1,238 @@
+:root {
+    --fontfam: "poppins";
+    --col: rgb(255, 243, 70);
+    --seccol: black;
+    --colblue: rgb(50, 207, 255);
+    --colgreen: rgba(0, 128, 0, 0.815);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontfam);
+}
+
+/* header {
+    position: sticky;
+    top: 0;
+} */
+
+
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav img {
+    margin-left: 30px;
+    width: 25px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 900;
+    font-family: var(--fontfam);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 15vw;
+}
+
+.logo1 {
+    color: var(--col);
+    background-color: var(--seccol);
+}
+
+.logo2 {
+    color: var(--seccol);
+    background-color: var(--col);
+    margin-left: 15vw;
+}
+
+.company {
+    font-family: var(--fontfam);
+    margin: 17px 7px;
+}
+
+.company p {
+    margin-left: 4px;
+    font-size: 0.5em;
+}
+
+nav ul {
+    display: flex;
+    gap: 35px;
+    list-style-type: none;
+    margin-left: 25vw;
+}
+
+nav ul li a {
+    color: grey;
+    text-decoration: none;
+}
+
+.downarrow {
+    display: inline-block;
+    padding: 5px;
+    color: grey;
+    transform: rotateZ(90deg);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.download {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+main em {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.windows img {
+    margin-left: 20px;
+}
+
+.down2 {
+    margin: 0 20vw;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.download-mac {
+    margin: 4vh auto;
+    padding: 15px;
+    background-color: var(--colblue);
+    border-radius: 5px;
+}
+
+.download-mac a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+section>p {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.version {
+    font-size: 0.7rem;
+    margin-top: 8px;
+}
+
+/* .grid {
+    margin: 20px auto;
+    display: flex;      // using flex box
+    width: 85vw;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-items: center;
+} */
+
+.grid {
+    margin: 20px auto;
+    display: grid;
+    /* using grid  */
+    width: 85vw;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.language {
+    background-color: rgb(243, 243, 243);
+    width: 367px;
+    height: 200px;
+}
+
+.languages {
+    margin: 6% 0;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.lang-name {
+    color: grey;
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+}
+
+.download-boxes {
+    display: flex;
+    justify-content: center;
+}
+
+#english {
+    visibility: hidden;
+}
+
+.download-32 {
+    margin: 15px 8px;
+    padding: 8px 5px;
+    background-color: var(--colblue);
+    border-radius: 5px;
+}
+
+.download-64 {
+    margin: 15px 8px;
+    padding: 8px 5px;
+    background-color: var(--colgreen);
+    border-radius: 5px;
+}
+
+.download-32 a {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.download-64 a {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1200px) {
+    .grid {
+        /*         background-color: red; */
+        margin: 0px auto;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:790px) {
+    .grid {
+        /*         background-color: blue; */
+        margin: 0px auto;
+        grid-template-columns: 1fr;
+    }
+}
